@@ -21,7 +21,7 @@
           <h3>Python & Golang</h3>
           <h3>Movie / Nothing else</h3>
           <!-- <h3>A poor boy</h3> -->
-          <a class="link" href="http://altynai.github.io/">
+          <a class="link" onClick="meetWho('Him')" href="http://altynai.github.io/">
             <svg class="icon left"><g fill="#FFF" fill-rule="nonzero"><path d="M.586 10.243L2 11.657l5.623-5.623L6.21 4.619z"></path><path d="M6.209 7.38l1.414-1.414L2 .343.586 1.757z"></path></g></svg>
             Meet Him
           </a>
@@ -37,7 +37,7 @@
           <h3>React & Vue & Angular</h3>
           <h3>Travel / Read / Movie</h3>
           <!-- <h3>A lovely girl</h3> -->
-          <a class="link" href="/blog">
+          <a class="link" onClick="meetWho('Her')" href="/blog">
               Meet Her
               <svg class="icon"><g fill="#FFF" fill-rule="nonzero"><path d="M.586 10.243L2 11.657l5.623-5.623L6.21 4.619z"></path><path d="M6.209 7.38l1.414-1.414L2 .343.586 1.757z"></path></g></svg>
             </a>
@@ -45,6 +45,11 @@
         
     </section>
   <script type="text/javascript" src='js/google_analytics.js'></script>
+  <script type="text/javascript">
+    function meetWho(type) {
+        ga('send', 'event', 'Button', 'meet'+type);
+    }
+</script>
 </body>
 
 </html>
